@@ -1,0 +1,81 @@
+body{
+    background: url(https://wallpapers.com/images/featured-full/strawberry-desktop-mlnfwdx8dayv5zct.jpg) center / cover;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+.form{
+    width: 500px;
+    @include absmiddle;
+    transition: .3s all ease-in-out;
+    .box{
+        display: flex;
+        flex-direction: column;
+        border: palevioletred 3mm ridge;
+        background-color: pink;
+        border-radius: 15px;
+        padding: 50px;
+        input, button{
+            background-color: rgba(255, 255, 255, 0.699);
+            border: 2px palevioletred solid;
+            border-radius: 5px;
+            padding: 10px 15px;
+        }
+        button{
+            margin-top: 10px;
+            width: 30%;
+            cursor: pointer;
+        }
+    }
+}
+.slide_form{
+    transition: .3s all ease-in-out;
+    transform: translateX(-300%);
+}
+.showBox{
+    @include absmiddle;
+    @include transition;
+    width: 500px;
+    height: 300px;
+    border: palevioletred 3mm ridge;
+    background-color: pink;
+    border-radius: 15px;
+    padding: 50px;
+    transform: translateX(300%);
+    .circle{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px solid palevioletred;
+        background-color: rgba(216, 112, 147, 0.637);
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        translate: -50% 0 0;
+    }
+    .back{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.699);
+        border: 2px palevioletred solid;
+        cursor: pointer;
+    }
+}
+.slide_box{
+    transition: .3s all ease-in-out;
+    transform: translateX(0);
+}
+h1{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+.user-info{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    p{
+        color: white;
+        font-size: 24px;
+    }
+}
